@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Arcanoid</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="profile">
+            <a href="..">
+                <img src="images/profile-image.jpg" alt="" class="profile__image">
+            </a>
+            <div class="profile__content">
+                <h1 class="profile__content__name">Ефимова Ника</h1>
+                <h2 class="profile__content__desc">Веб-разработчик</h2>
+            </div>
+            <details class="heading">
+                <summary>Игра Арканоид</summary>
+                <p>
+                    Доступна только с компьютера
+                </p>
+                <p>
+                    Управление ракеткой для ловли шарика через клавиши "влево" и "вправо".
+                </p>
+                <p>
+                    Можно сбросить рекорд игры и текущий счет кнопкой "Reset score"
+                </p>
+                <p>
+                    Рекорд игры сохраняется в кеш браузера.
+                </p>
+
+            </details>
+        </div>
+    </header>
+    <main>
+        <div class="mobile-messages" id="mobile-messages"></div>
+        <div class="game">
+            <h1 class="game-title" id="game-title"></h1>
+            <div class="game-body">
+                <div class="game-scores">
+                    <div class="high-score score">
+                        <h3 class="score-title">High Score</h3>
+                        <div class="score-value" id="high-score-value">0</div>
+                    </div>
+                    <div class="curr-score score">
+                        <h3 class="score-title">Current Score</h3>
+                        <div class="score-value" id="curr-score-value">0</div>
+                    </div>
+                    <button class="reset-score-button button" id="reset-score-button">Reset score</button>
+                </div>
+                <div class="game-area">
+                    <div class="controls-window show" id="controls-window">
+                        <div id="controls-window__message" class="controls-window__message hide"></div>
+                        <div id="controls-window__buttons" class="controls-window__buttons">
+                        </div>
+                        <div class="controls-window__tips">
+                            For moving the paddle use <span class="key">&#8592;</span> and <span class="key">&#8594;</span>
+                        </div>
+                    </div>
+                    <canvas id="game-field" class="game-field" width="480" height="320"></canvas>
+                </div>
+            </div>
+            <script src="library.js"></script>
+            <script src="game.js"></script>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-row">
+            <div class="footer-row__column">
+                Ника Ефимова, 2024
+            </div>
+            <div class="footer-row__column">
+                <a href="https://github.com/nicae-dev/game-arcanoid" class="link">
+                    <img src="images/github.png" alt="" class="icon">Этот проект на git
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
