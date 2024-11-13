@@ -1,12 +1,12 @@
 ## Игра арканоид
+### Суть игры: ловить шарик ракеткой.
+- Клавишами стрелками "влево" и "вправо" можно двигать ракетку.
 
-- Доступна только с компьютера
+- Полный функционал доступен только с компьютера
 - Управление ракеткой для ловли шарика через клавиши "влево" и "вправо".
 - Можно сбросить рекорд игры и текущий счет кнопкой "Reset score"
 - Рекорд игры сохраняется в кеш браузера.
-- 
-## Запустить
 
-➡️ **https://nicae-dev.github.io/game-arcanoid/**
-
-![github-pages](https://github.com/nicae-dev/game-arcanoid/blob/main/images/preview.jpg)
+➡️ **[Запустить игру](https://nicae-dev.github.io/game-arcanoid)**
+### Превью
+![https://nicae-dev.github.io/game-arcanoid/](https://github.com/nicae-dev/game-arcanoid/blob/main/images/preview.jpg)
